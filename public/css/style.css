@@ -33,6 +33,12 @@
     background: #B537F2;
     height: 50px;
     text-decoration: none;
+    transition: 0.4s;
+}
+.btn-book:hover{
+    background: transparent linear-gradient(102deg, #B537F2 0%, #3788F2 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-decoration: none;
 }
 
 .games-img {

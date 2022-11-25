@@ -17,3 +17,5 @@ Route::resource('/home', App\Http\Controllers\HomeController::class);
 Route::resource('/admin', App\Http\Controllers\AdminController::class);
 Route::resource('/blog', App\Http\Controllers\BlogController::class);
 Route::resource('/', App\Http\Controllers\HomeController::class);
+
+Route::get('check_user', [\App\Http\Controllers\LoginController::class, 'check_user'])->name('check_user');

@@ -81,4 +81,8 @@ class LoginController extends Controller
     {
         //
     }
+
+    public function check_user(Request $request){
+        dd($request);
+    }
 }
