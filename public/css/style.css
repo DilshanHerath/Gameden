@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+.banner-img {
+    background-image: url('/assets/img/hero-pattern.png');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #020312;
+    position: relative;
+}
+
+.banner-text {
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.banner-text2 {
+    background: -webkit-linear-gradient(#B537F2, #3788F2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.banner-sub-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.btn-book {
+    background: #B537F2;
+    height: 50px;
+    text-decoration: none;
+}
+
+.games-img {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+}
+
+.sub-title-blue {
+    border: 1px solid #3788F2;
+    color: #3788F2;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    background: #3788F229;
+}
+
+.sub-title-purpule {
+    border: 1px solid #B537F2;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    color: #3788F2;
+    background: #3788F229;
+}
+
+.form-background-blue {
+    background: transparent linear-gradient(119deg, rgba(181, 55, 242, 1) 0%,
+    rgba(55, 136, 242, 1) 100%) 0% 0% no-repeat padding-box;
+}
+
+#selector select option {
+    color: #333;
+    position: relative;
+    top: 5px;
+}
+
+#selector {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select.input-lg {
+    height: 48px !important;
+    line-height: 25px !important;
+    background: transparent;
+    border-radius: 0;
+}
+
+select + i.fa {
+    float: right;
+    margin-top: -42px;
+    margin-right: 15px;
+    pointer-events: none;
+    color: white;
+    font-size: 25px;
+    background-color: transparent;
+    padding-right: 5px;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.form_input {
+    height: 48px;
+    background: #FFFFFF0D !important;
+}
+
+.form_btn_black {
+    background-color: #020312;
+    height: 48px;
+    color: white;
+    border-radius: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+.ver-hor_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font-clash-display{
+    font-family: 'Clash Display', sans-serif;
+}
+.fs-2{
+    font-size: 50px;
+}
+.fs-3{
+    font-size: 20px;
+}
+.font-manrope-regular{
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+}
+.font-manrope-bold{
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*navbar*/
+
+.bg-black{
+    background-color: black;
+}
+.fs-12{
+    padding-right: 3%;
+    padding-left: 3%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 14px;
+    color: #c4c1c0;
+    cursor: pointer;
+}
+
+.btn-close{
+    opacity: 1!important;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-link{
+    color: white!important;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1px;
+    /*width: 310px;*/
+}
+.nav-link:hover{
+    background-color: #1d1d1d;
+    text-decoration: none;
+}
+.navbar-toggler{
+    background: #B436F2;
+    color: white;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 14px;
+}
+
+/*navbar*/
