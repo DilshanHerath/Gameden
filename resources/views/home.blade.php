@@ -50,8 +50,8 @@
             <div class="col-md-4 mt-5" style="position: relative">
                 <div class="row mx-1" style="background-color: #020312">
                     <div class="col-6 mt-4">
-                        <p class="font-clash-display fs-4 mb-2 text-white">{{$games->title}}</p>
-                        <p class="font-manrope-regular fs-5" style="color: #CCCCCF">{{$games->description}}</p>
+                        <p class="font-clash-display fs-5 mb-2 text-white">{{$games->title}}</p>
+                        <p class="font-manrope-regular" style="color: #CCCCCF">{{$games->description}}</p>
                         <div class="d-flex">
                             <p class="font-manrope-bold" style="color: #B537F2">View more</p>
                             <img src="/assets/img/arrow.png" width="24" height="24" alt="">
