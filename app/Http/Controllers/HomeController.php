@@ -48,7 +48,8 @@ class HomeController extends Controller
             $home->type = $input['type'];
 
             $home->save();
-            return redirect()->back()->withSuccess('message','Succefully Registered');
+//            return redirect()->back()->withSuccess('message','Succefully Registered');
+            return redirect()->back()->with(session()->flash('message','Succefully Registered'));
 
         } catch (\Exception $e) {
             return redirect()->back()->withErrors($e->getMessage());

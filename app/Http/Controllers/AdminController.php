@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Game;
+use App\Models\Home;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -17,7 +18,8 @@ class AdminController extends Controller
     {
         $game = Game::all();
         $blog = Blog::all();
-        return view('admin.index', compact('game', 'blog'));
+        $home = Home::all();
+        return view('admin.index', compact('game', 'blog', 'home'));
     }
 
     /**

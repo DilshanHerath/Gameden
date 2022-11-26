@@ -26,7 +26,7 @@
 .banner-sub-text {
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .btn-book {
@@ -44,7 +44,7 @@
 .games-img {
     position: absolute;
     bottom: 0;
-    right: 4%;
+    right: 0;
 }
 
 .sub-title-blue {
@@ -133,16 +133,16 @@ select + i.fa {
     font-family: 'Clash Display', sans-serif;
 }
 .fs-2{
-    font-size: 50px;
+    font-size: 55px;
 }
 .fs-3{
     font-size: 20px;
 }
 .fs-4{
-    font-size: 15px;
+    font-size: 14px;
 }
-.fs-5{
-    font-size: 13px;
+.game-box:hover{
+    opacity: 0.7;
 }
 .font-manrope-regular{
     font-family: 'Manrope', sans-serif;
@@ -233,9 +233,9 @@ a{
     height: 34px;
     margin-bottom: 0;
     border-radius: 100%;
-    background: #ffffff;
-    /*border: 1px solid transparent;*/
-    /*box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);*/
+    background: #3788F2;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     font-weight: normal;
     transition: all 0.2s ease-in-out;
@@ -277,6 +277,12 @@ a{
 @media only screen and (max-width: 600px) {
     .mob-hide {
         display: none;
+    }
+    .banner-text {
+         font-size: 40px;
+    }
+    .fs-2 {
+        font-size: 35px;
     }
 }
 

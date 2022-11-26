@@ -2,6 +2,8 @@
 
 @section('content')
 
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+
 <!--banner-->
 <section class="banner-img">
     <div class="container-fluid">
@@ -12,17 +14,17 @@
                     co-op gaming experience
                 </h1>
                 <br>
-                <p class="text-white banner-sub-text">
+                <p class="text-white banner-sub-text" style="color: #CCCCCF">
                     Hic quo molestiae sed accusantium omnis soluta omnis minima tempore perferendis voluptatem cum rerum
                     non ratione.
                 </p>
                 <br>
                 <div class="row d-flex">
-                    <div class="col-md-5">
+                    <div class="col-md-5 mb-5">
                         <a href="" class="ver-hor_center text-white font-manrope-bold btn-book">
                             Book a session now!</a>
                     </div>
-                    <div class="col-md-7 px-4 align-items-center d-flex">
+                    <div class="col-md-7 px-4 align-items-center d-flex mb-5">
                         <div>
                             <img src="/assets/img/arrow-icon.png" alt="">
                         </div>
@@ -41,36 +43,37 @@
 
 <!--all in one section -->
 <section style="background: #343541">
+
+    <!--        space       -->
+    <div class="py-5"></div>
+
     <div class="container">
         <div class="row pb-5">
-            <!--        space       -->
-            <div class="my-4"></div>
-
             @foreach ($game as $games)
             <div class="col-md-4 mt-5" style="position: relative">
-                <div class="row mx-1" style="background-color: #020312">
-                    <div class="col-6 mt-4">
-                        <p class="font-clash-display fs-4 mb-2 text-white">{{$games->title}}</p>
-                        <p class="font-manrope-regular fs-5" style="color: #CCCCCF">{{$games->description}}</p>
+                <div class="row mx-1 game-box" style="background-color: #020312">
+                    <div class="col-md-6 mt-4">
+                        <p class="font-clash-display mb-2 text-white" style="font-size: 18px">{{$games->title}}</p>
+                        <p class="font-manrope-regular fs-4" style="color: #CCCCCF">{{$games->description}}</p>
                         <div class="d-flex">
                             <p class="font-manrope-bold" style="color: #B537F2">View more</p>
                             <img src="/assets/img/arrow.png" width="24" height="24" alt="">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <img src="/assets/img/battlefield-5.png" height="115%"
                              class="games-img" alt="">
                     </div>
                 </div>
             </div>
             @endforeach
-
-            <!--        space       -->
-            <div class="my-4"></div>
-
         </div>
 
         <section>
+
+            <!--        space       -->
+            <div class="py-4"></div>
+
             <div class="d-flex justify-content-center" style="">
                 <p class="mb-3 px-3 py-1 sub-title-blue">ALL IN ONE PLATFORM</p>
             </div>
@@ -92,7 +95,7 @@
                 <div class="col-md-4 mt-5" style="position: relative">
                     <div style="background-color: #676770" class="ml-1 p-3">
                         <img class="mb-1" src="/assets/img/clock.png" width="42px" height="42px" alt="">
-                        <p class="fs-5 mb-1 font-clash-display text-white">Center hours</p>
+                        <p class="mb-1 font-clash-display text-white" style="font-size: 20px">Center hours</p>
                         <p class="banner-sub-text" style="color: #CCCCCF">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut labore et dolore magna.
@@ -102,7 +105,7 @@
                 <div class="col-md-4 mt-5" style="position: relative">
                     <div style="background-color: #676770" class="ml-1 p-3">
                         <img class="mb-1" src="/assets/img/cup.png" width="42px" height="42px" alt="">
-                        <p class="fs-5 mb-1 font-clash-display text-white">Tournaments</p>
+                        <p class="mb-1 font-clash-display text-white" style="font-size: 20px">Tournaments</p>
                         <p class="banner-sub-text" style="color: #CCCCCF">
                             Molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
                             officia deserunt mollitia.
@@ -112,8 +115,8 @@
                 <div class="col-md-4 mt-5" style="position: relative">
                     <div style="background-color: #676770" class="ml-1 p-3">
                         <img class="mb-1" src="/assets/img/party.png" width="42px" height="42px" alt="">
-                        <p class="fs-5 mb-1 font-clash-display text-white">Parties</p>
-                        <p class="banner-sub-text pb-3" style="color: #CCCCCF">
+                        <p class="mb-1 font-clash-display text-white" style="font-size: 20px">Parties</p>
+                        <p class="banner-sub-text" style="color: #CCCCCF">
                             Animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
                             distinctioed ut.
                         </p>
@@ -121,7 +124,8 @@
                 </div>
             </div>
 
-            <p class="fs-3 font-clash-display text-center text-white mb-4">Fueled by most known names in the gaming industry</p>
+            <h4 class="font-clash-display text-center text-white mb-4">Fueled by most known names in the gaming
+                industry</h4>
 
             <div class="row d-flex justify-content-center">
                 <div class="col-md-1"></div>
@@ -145,6 +149,7 @@
         </section>
     </div>
 </section>
+
 
 <section style="background: #020312">
 
@@ -193,7 +198,7 @@
         </div>
         <br>
 
-        <div class="d-flex justify-content-center ">
+        <div class="d-flex justify-content-center pt-3">
             <p class="font-manrope-bold" style="color: #B537F2">View all photos</p>
             <img src="/assets/img/arrow.png" width="24" height="24" alt="">
         </div>
@@ -202,6 +207,18 @@
         <div class="py-5"></div>
 
         <div class="form-background-blue">
+            <!--alert-->
+            <div class="row ver-hor_center pt-5">
+                <div class="col-10">
+                    @if(session()->has('message'))
+                    <div class="alert alert-info text-center fw-bold" id="successMessage" role="alert">
+                       {{session('message')}}
+                    </div>
+                    @endif
+
+                </div>
+            </div>
+            <!--alert-->
             <div class="row pt-5 px-5 ver-hor_center">
                 <div class="col-md-6">
                     <h1 class="mb-2 fs-2 text-left text-white font-clash-display">
@@ -242,12 +259,12 @@
                             </div>
                         </div>
 
-                        @if(session()->has('message'))
-                        <div class="alert alert-success alert-dismissable custom-success-box" style="margin: 15px;">
-                            <a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times;</a>
-                            <strong> {{ session()->get('message') }} </strong>
-                        </div>
-                        @endif
+<!--                        @if(session()->has('message'))-->
+<!--                        <div class="alert alert-success alert-dismissable custom-success-box" style="margin: 15px;">-->
+<!--                            <a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times;</a>-->
+<!--                            <strong> {{ session()->get('message') }} </strong>-->
+<!--                        </div>-->
+<!--                        @endif-->
 
                         <button type="submit" class="btn form_btn_black w-100 mt-3 mb-5">Submit</button>
                     </form>
@@ -274,7 +291,7 @@
             </div>
         </div>
 
-        <div class="mt-5" id="carousel">
+        <div id="carousel">
             <ul>
                 <li>
                     <img src="/assets/img/video-3-thumbnail.png" class="d-block mx-auto" alt="for website">
@@ -327,7 +344,7 @@
                     <div class="card-body p-0">
                         <p class="card-text my-2 font-manrope-regular">29 April 2021</p>
                         <div class="mb-3">
-                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Primary</span>
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Action</span>
                             <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Platform</span>
                             <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">FPS</span>
                         </div>
@@ -345,11 +362,58 @@
                 </div>
             </div>
 
+            <div class="col-md-4 mb-5">
+                <div style="background: #020312" class="p-3">
+                    <img class="card-img-top" src="/assets/img/blog-2.png" alt="Card image cap">
+
+                    <div class="card-body p-0">
+                        <p class="card-text my-2 font-manrope-regular">29 April 2021</p>
+                        <div class="mb-3">
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Platform</span>
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Action</span>
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">FPS</span>
+                        </div>
+                        <h5 class="card-title text-white font-clash-display">Non molestiae animi quam sequi aut</h5>
+                        <p class="card-text banner-sub-text" style="color: #CCCCCF">Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        <div class="d-flex justify-content-start">
+                            <p class="fw-bold" style="color: #B537F2">Read more</p>
+                            <img src="/assets/img/arrow.png" width="24" height="24" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <div style="background: #020312" class="p-3">
+                    <img class="card-img-top" src="/assets/img/blog-3.png" alt="Card image cap">
+
+                    <div class="card-body p-0">
+                        <p class="card-text my-2 font-manrope-regular">29 April 2021</p>
+                        <div class="mb-3">
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Primary</span>
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">Platform</span>
+                            <span class="badge badge-primary p-2 rounded-0" style="background: #1D1D2B;color: #71737B">FPS</span>
+                        </div>
+                        <h5 class="card-title text-white font-clash-display">Occaecati cum quidem quia assumendat optio
+                            illum et</h5>
+                        <p class="card-text banner-sub-text" style="color: #CCCCCF">Lorem ipsum dolor sit amet,
+                            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                        <div class="d-flex justify-content-start">
+                            <p class="fw-bold" style="color: #B537F2">Read more</p>
+                            <img src="/assets/img/arrow.png" width="24" height="24" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="d-flex justify-content-center ">
             <p class="font-manrope-bold" style="color: #B537F2">View all blogs</p>
             <img src="/assets/img/arrow.png" width="24" height="24" alt="">
         </div>
+        <!--        space       -->
+        <div class="py-4"></div>
     </div>
 </section>
 
@@ -506,6 +570,11 @@
         nav: false,
         buttons: false,
     });
+
+    setTimeout(function () {
+        $('#successMessage').fadeOut('fast');
+    },6000);
+
 </script>
 
 @endsection

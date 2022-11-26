@@ -6,9 +6,23 @@
     <div class="container">
         <div class="row ver-hor_center">
             <div class="col-md-6 mt-5" style="background-color: #3788F229;border-radius: 10px">
-               <div  class="ver-hor_center my-5">
+               <div  class="ver-hor_center mt-5">
                    <img src="/assets/img/game-den logo.png" alt="logo">
                </div>
+
+                <!--alert-->
+                <div class="row ver-hor_center pt-5">
+                    <div class="col-10">
+                        @if(session()->has('message'))
+                        <div class="alert alert-danger text-center fw-bold" id="successMessage" role="alert">
+                            {{session('message')}}
+                        </div>
+                        @endif
+
+                    </div>
+                </div>
+                <!--alert-->
+
                 <form action="{{route('check_user')}}" method="get">
                     @csrf
                     <div class="mb-3 px-5">
@@ -21,7 +35,6 @@
                     </div>
 
                     <div class="mb-3 px-5">
-<!--                        <a type="submit" class="form_btn_black ver-hor_center px-5 w-100 mt-4" href="{{route('check_user')}}" style="font-weight: bold;text-decoration: none">Login</a>-->
                         <button type="submit"  class="form_btn_black ver-hor_center px-5 w-100 mt-4" style="font-weight: bold;text-decoration: none">Login</button>
                         <button type="submit" class="btn form_btn_black2 px-5 w-100 my-4" style="font-weight: bold">Sign Up</button>
                     </div>
@@ -31,5 +44,14 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('script')
+
+<script>
+    setTimeout(function () {
+        $('#successMessage').fadeOut('fast');
+    },5000);
+</script>
 
 @endsection

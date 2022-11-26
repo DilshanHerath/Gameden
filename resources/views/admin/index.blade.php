@@ -67,7 +67,8 @@
                                 <tr>
                                     <td>{{ $game -> title }}</td>
                                     <td>{{ $game -> description }}</td>
-                                    <td><img src="{{url('storage/'.$game->photo)}}" alt=""></td>
+                                    <td><img src="{{url('storage/'.$game->photo)}}" width="100%" height="50" alt="">
+                                    </td>
 
                                     <td>
                                         <div class="btn-group">
@@ -85,7 +86,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <!--Model of Update Student-->
+                                <!--Model of Update Game-->
                                 <div class="modal right fade mt-3" id="editgame{{ $game->id }}"
                                      data-bs-backdrop="static"
                                      data-bs-keyboard="false" tabindex="-1"
@@ -101,7 +102,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form action="{{ route('games.update', $game->id) }}" method="post"
+                                                <form action="{{ route('games.update', $game->id) }}"
                                                       enctype="multipart/form-data">
                                                     @csrf
                                                     @method('put')
@@ -113,10 +114,13 @@
                                                                     class="fa fa-camera fa-sm"></i></label>
                                                         </div>
                                                         <div class="avatar-preview">
-
-                                                            <input type="hidden" id="old-img"
+                                                            <input type="hidden" name="image" id="old-img"
                                                                    value="{{url('storage/'.$game->photo)}}">
-                                                            <img src="{{url('storage/'.$game->photo)}}"
+<!--                                                            <img width="100%" height="100%"-->
+<!--                                                                 src="{{url('storage/'.$game->photo)}}"-->
+<!--                                                                 id="imagePreview">-->
+                                                            <img width="100%" height="100%"
+                                                                 src="{{url('storage/'.$game->photo)}}"
                                                                  id="imagePreview">
                                                         </div>
                                                     </div>
@@ -194,12 +198,6 @@
 </section>
 <!--game section-->
 
-
-<!--register section-->
-
-<!--register section-->
-
-
 <!--blog section-->
 <section style="background-color: #1a202c">
     <div class="container">
@@ -273,7 +271,8 @@
 
 
                                             <button class="btn btn-info btn-sm" data-bs-toggle="modal"
-                                                    data-bs-target="#editbblog{{ $blog->id }}"><i class="fa fa-edit"></i>
+                                                    data-bs-target="#editbblog{{ $blog->id }}"><i
+                                                    class="fa fa-edit"></i>
                                                 Edit
                                             </button>
                                             <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
@@ -395,6 +394,58 @@
 <!--blog section-->
 
 
+<!--register section-->
+<section style="background-color: #1a202c">
+    <div class="container">
+        <div class="d-flex ver-hor_center pb-5">
+            <div class="col mob-hide" style="background-color: red;height: 2px;width: 100%"></div>
+            <div class="col-3">
+                <h1 class="fs-3 text-center text-white font-clash-display">
+                    Registerd Members
+                </h1>
+            </div>
+            <div class="col mob-hide" style="background-color: red;height: 2px;width: 100%"></div>
+        </div>
+
+        <div class="row pb-5">
+            <div class="col-md-12">
+                <div class="card px-0">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 p-3" style="float: left">All Games</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-left">
+                            <thead>
+                            <tr>
+                                <th class="text-center">Full Name</th>
+                                <th class="text-center">Email</th>
+                                <th class="text-center">Phone</th>
+                                <th class="text-center">Preferred gaming console</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach ($home as $home)
+                            <tr>
+                                <td class="text-center">{{ $home -> full_name }}</td>
+                                <td class="text-center">{{ $home -> email }}</td>
+                                <td class="text-center">{{ $home -> contact }}</td>
+                                <td class="text-center">{{ $home -> type }}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--register section-->
+
+
 @endsection
 
 @section('script')
@@ -414,6 +465,7 @@
     $("#imageUpload").change(function () {
         readURL(this);
     });
+
 </script>
 @endsection
 

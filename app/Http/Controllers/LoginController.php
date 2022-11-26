@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Game;
+use App\Models\Home;
 use Illuminate\Http\Request;
 
 class LoginController extends Controller
@@ -83,6 +86,25 @@ class LoginController extends Controller
     }
 
     public function check_user(Request $request){
-        dd($request);
+        $game = Game::all();
+        $blog = Blog::all();
+        $home = Home::all();
+
+        if ($request->username== 'Dilshan'){
+            if ($request->password== '1234'){
+//                dd('true');
+                return view('admin.index', compact('game', 'blog', 'home'));
+
+            }else{
+                return redirect()->back()->with(session()->flash('message','password invalid'));
+//                dd('password invalid');
+            }
+        }else{
+            return redirect()->back()->with(session()->flash('message','username  invalid'));
+//            dd('username  invalid');
+        }
+
+//       dd($request->username== 'Dilshan.Herath');
+//       dd($request->password== '1234');
     }
 }

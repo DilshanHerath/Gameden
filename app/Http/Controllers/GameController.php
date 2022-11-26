@@ -37,14 +37,9 @@ class GameController extends Controller
     public function store(Request $request)
     {
 
-//        dd($request);
         try {
 
             $game = new Game();
-
-//            $name = Carbon::now()->timestamp;
-//            $extension = $request->file('image')->getClientOriginalExtension();
-//            $request->image->storeAs('/public', $name . '.' . $extension);
 
             $name = $request->image;
             $imagename = time().$name->getClientOriginalName();
@@ -94,14 +89,15 @@ class GameController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $name = Carbon::now()->timestamp;
-        $extension = $request->file('image')->getClientOriginalExtension();
-        $request->image->storeAs('/public', $name . '.' . $extension);
+        dd($request);
+        $name = $request->image;
+        $imagename = time().$name->getClientOriginalName();
+        $name->storeAs('/public', $imagename);
 
         Game::where('id', $id)->update([
             'title' => $request->title,
             'description' => $request->description,
-            'photo' => '' . $name . '.' . $extension
+            'photo' => $imagename
         ]);
         return redirect(route('admin.index'))->with('message', 'Game Updated Successfully!');
     }
@@ -114,8 +110,8 @@ class GameController extends Controller
      */
     public function destroy($id)
     {
-        $game =Game::find($id);
-        $game->delete();
+        $game = Game::find($id);
+        $game -> delete();
         return redirect('admin');
     }
 }
