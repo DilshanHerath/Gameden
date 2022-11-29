@@ -32,35 +32,36 @@
                 </button>
             </div>
         </div>
-<!--        <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar"-->
-<!--             aria-labelledby="offcanvasNavbarLabel">-->
-<!--            <div class="offcanvas-header d-flex justify-content-end">-->
-<!--                    <span class="btn-close text-white" data-bs-toggle="offcanvas"-->
-<!--                          aria-label="Close">X</span>-->
-<!--            </div>-->
-<!--            <div class="offcanvas-body">-->
-<!--                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link  p-3" aria-current="page" href="#">Home</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link p-3" href="#">Games</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link p-3" href="#">Events</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link p-3" href="#">Blog</a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link p-3" href="#">Locations</a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar"
+             aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header d-flex justify-content-end">
+                    <span class="btn-close text-white" data-bs-toggle="offcanvas"
+                          aria-label="Close">X</span>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link  p-3" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="#">Locations</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </div>
 </nav>
+
 
 <style>
     .bg-black {
@@ -105,3 +106,17 @@
         font-size: 14px;
     }
 </style>
+
+<!--<script>-->
+<!--    $(document).ready(function () {-->
+<!--        // all movie render-->
+<!--        movie_render_all();-->
+<!---->
+<!--        // nav bar-->
+<!--        $("ul.navbar-nav > li").click(function (e) {-->
+<!--            $("ul.navbar-nav > li").removeClass("active");-->
+<!--            $(this).addClass("active");-->
+<!--        });-->
+<!---->
+<!--    });-->
+<!--</script>-->

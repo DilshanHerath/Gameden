@@ -2,7 +2,6 @@
 
 @section('content')
 
-<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
 
 <!--banner-->
 <section class="banner-img">
@@ -54,14 +53,14 @@
                 <div class="row mx-1 game-box" style="background-color: #020312">
                     <div class="col-md-6 mt-4">
                         <p class="font-clash-display mb-2 text-white" style="font-size: 18px">{{$games->title}}</p>
-                        <p class="font-manrope-regular fs-4" style="color: #CCCCCF">{{$games->description}}</p>
+                        <p class="font-manrope-regular fsc-4" style="color: #CCCCCF">{{$games->description}}</p>
                         <div class="d-flex">
                             <p class="font-manrope-bold" style="color: #B537F2">View more</p>
                             <img src="/assets/img/arrow.png" width="24" height="24" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="/assets/img/battlefield-5.png" height="115%"
+                        <img  src="{{url('storage/'.$games->photo)}}" height="115%"
                              class="games-img" alt="">
                     </div>
                 </div>
@@ -78,7 +77,7 @@
                 <p class="mb-3 px-3 py-1 sub-title-blue">ALL IN ONE PLATFORM</p>
             </div>
 
-            <h1 class="mb-3 text-center text-white font-clash-display fs-2">
+            <h1 class="mb-3 text-center text-white font-clash-display fsc-2">
                 Unlimited exitement
             </h1>
             <div class="row d-flex justify-content-center">
@@ -161,7 +160,7 @@
             <p class="mb-3 px-3 py-1 sub-title-purpule">GALLERY</p>
         </div>
 
-        <h1 class="mb-2 text-center text-white fs-2 font-clash-display">
+        <h1 class="mb-2 text-center text-white fsc-2 font-clash-display">
             Here’S How The Rigs Looks
         </h1>
         <div class="row d-flex justify-content-center">
@@ -221,7 +220,7 @@
             <!--alert-->
             <div class="row pt-5 px-5 ver-hor_center">
                 <div class="col-md-6">
-                    <h1 class="mb-2 fs-2 text-left text-white font-clash-display">
+                    <h1 class="mb-2 fsc-2 text-left text-white font-clash-display">
                         Reserve your membership today!
                     </h1>
                     <p class="text-left banner-sub-text" style="color: #CCCCCF">
@@ -280,7 +279,7 @@
             <p class="sub-title-blue mb-3 px-3 py-1">FOOTAGE</p>
         </div>
 
-        <h1 class="mb-2 text-center text-white font-clash-display fs-2">
+        <h1 class="mb-2 text-center text-white font-clash-display fsc-2">
             Check how fun it was!
         </h1>
         <div class="row d-flex justify-content-center">
@@ -324,7 +323,7 @@
             <p class="sub-title-blue mb-3 px-3 py-1">BLOGS</p>
         </div>
 
-        <h1 class="mb-2 text-center text-white fw-bold font-clash-display fs-2">
+        <h1 class="mb-2 text-center text-white fw-bold font-clash-display fsc-2">
             Enlighten yourself
         </h1>
         <div class="row d-flex justify-content-center">

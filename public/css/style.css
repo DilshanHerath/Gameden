@@ -33,7 +33,7 @@
     background: #B537F2;
     height: 50px;
     text-decoration: none;
-    transition: 0.4s;
+    /*transition: 0.4s;*/
 }
 .btn-book:hover{
     background: transparent linear-gradient(102deg, #B537F2 0%, #3788F2 100%) 0% 0% no-repeat padding-box;
@@ -46,6 +46,7 @@
     bottom: 0;
     right: 0;
 }
+
 
 .sub-title-blue {
     border: 1px solid #3788F2;
@@ -132,14 +133,14 @@ select + i.fa {
 .font-clash-display{
     font-family: 'Clash Display', sans-serif;
 }
-.fs-2{
-    font-size: 55px;
+.fsc-2{
+    font-size: 55px !important;
 }
-.fs-3{
-    font-size: 20px;
+.fsc-3{
+    font-size: 20px !important;
 }
-.fs-4{
-    font-size: 14px;
+.fsc-4{
+    font-size: 14px !important;
 }
 .game-box:hover{
     opacity: 0.7;
@@ -168,10 +169,11 @@ a{
 
 /*navbar*/
 
-.bg-black{
+.bg-black {
     background-color: black;
 }
-.fs-12{
+
+.fsc-12 {
     padding-right: 3%;
     padding-left: 3%;
     font-family: 'Manrope', sans-serif;
@@ -179,27 +181,30 @@ a{
     letter-spacing: 1px;
     text-transform: capitalize;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 14px !important;
     color: #c4c1c0;
     cursor: pointer;
 }
 
-.btn-close{
-    opacity: 1!important;
+.btn-close {
+    opacity: 1 !important;
     font-size: 30px;
     cursor: pointer;
 }
-.nav-link{
-    color: white!important;
+
+.nav-link {
+    color: white !important;
     font-family: 'Comfortaa', cursive;
     letter-spacing: 1px;
     /*width: 310px;*/
 }
-.nav-link:hover{
+
+.nav-link:hover {
     background-color: #1d1d1d;
     text-decoration: none;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     background: #B436F2;
     color: white;
     font-family: 'Clash Display', sans-serif;
@@ -281,7 +286,7 @@ a{
     .banner-text {
          font-size: 40px;
     }
-    .fs-2 {
+    .fsc-2 {
         font-size: 35px;
     }
 }

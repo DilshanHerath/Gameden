@@ -8,7 +8,7 @@
         <div class="d-flex ver-hor_center pt-5">
             <div class="col-md-4 mob-hide" style="background-color: red;height: 2px;width: 100%"></div>
             <div class="col-md-2">
-                <h1 class="mb-2  fs-3 text-center text-white font-clash-display">
+                <h1 class="mb-2  fsc-3 text-center text-white font-clash-display">
                     Game
                 </h1>
             </div>
@@ -204,7 +204,7 @@
         <div class="d-flex ver-hor_center pb-5">
             <div class="col-md-4 mob-hide" style="background-color: red;height: 2px;width: 100%"></div>
             <div class="col-2">
-                <h1 class="mb-md-2  fs-3 text-center text-white font-clash-display">
+                <h1 class="mb-md-2  fsc-3 text-center text-white font-clash-display">
                     Blog
                 </h1>
             </div>
@@ -400,7 +400,7 @@
         <div class="d-flex ver-hor_center pb-5">
             <div class="col mob-hide" style="background-color: red;height: 2px;width: 100%"></div>
             <div class="col-3">
-                <h1 class="fs-3 text-center text-white font-clash-display">
+                <h1 class="fsc-3 text-center text-white font-clash-display">
                     Registerd Members
                 </h1>
             </div>
