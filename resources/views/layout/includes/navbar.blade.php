@@ -5,14 +5,14 @@
         </div>
         <div class="col-8 d-none d-lg-block">
             <div class="d-flex align-items-center">
-                <a href="#" class="m-0 fs-12">Home</a>
-                <a href="#ourscreen" class="m-0 fs-12">Games</a>
-                <a href="#schedule" class="m-0 fs-12">Events</a>
-                <a href="#movie_library" class="m-0 fs-12">Blog</a>
-                <a href="#location" class="m-0 fs-12">Locations</a>
+                <a href="#Home" class="m-0 fsc-12">Home</a>
+                <a href="#games" class="m-0 fsc-12">Games</a>
+                <a href="#events" class="m-0 fsc-12">Events</a>
+                <a href="#blog" class="m-0 fsc-12">Blog</a>
+                <a href="#locations" class="m-0 fsc-12">Locations</a>
 
                 <div class="d-flex align-items-center justify-content-end w-100">
-                    <a href="#location" class="px-4 m-0 fs-12">Login</a>
+                    <a href="#location" class="px-4 m-0 fsc-12">Login</a>
                     <button class="navbar-toggler px-3 py-2 rounded-0 text-white" type="button"
                             data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -41,19 +41,19 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link  p-3" aria-current="page" href="#">Home</a>
+                        <a class="nav-link p-3 fsc-12" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-3" href="#">Games</a>
+                        <a class="nav-link p-3 fsc-12" href="#">Games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-3" href="#">Events</a>
+                        <a class="nav-link p-3 fsc-12" href="#">Events</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-3" href="#">Blog</a>
+                        <a class="nav-link p-3 fsc-12" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link p-3" href="#">Locations</a>
+                        <a class="nav-link p-3 fsc-12" href="#">Locations</a>
                     </li>
                 </ul>
 
@@ -63,49 +63,7 @@
 </nav>
 
 
-<style>
-    .bg-black {
-        background-color: black;
-    }
 
-    .fs-12 {
-        padding-right: 3%;
-        padding-left: 3%;
-        font-family: 'Manrope', sans-serif;
-        font-weight: normal;
-        letter-spacing: 1px;
-        text-transform: capitalize;
-        text-decoration: none;
-        font-size: 14px;
-        color: #c4c1c0;
-        cursor: pointer;
-    }
-
-    .btn-close {
-        opacity: 1 !important;
-        font-size: 30px;
-        cursor: pointer;
-    }
-
-    .nav-link {
-        color: white !important;
-        font-family: 'Comfortaa', cursive;
-        letter-spacing: 1px;
-        /*width: 310px;*/
-    }
-
-    .nav-link:hover {
-        background-color: #1d1d1d;
-        text-decoration: none;
-    }
-
-    .navbar-toggler {
-        background: #B436F2;
-        color: white;
-        font-family: 'Clash Display', sans-serif;
-        font-size: 14px;
-    }
-</style>
 
 <!--<script>-->
 <!--    $(document).ready(function () {-->

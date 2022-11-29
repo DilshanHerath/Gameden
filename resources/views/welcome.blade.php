@@ -53,14 +53,14 @@
                 <div class="row mx-1 game-box" style="background-color: #020312">
                     <div class="col-md-6 mt-4">
                         <p class="font-clash-display mb-2 text-white" style="font-size: 18px">{{$games->title}}</p>
-                        <p class="font-manrope-regular fsc-4" style="color: #CCCCCF">{{$games->description}}</p>
+                        <p class="font-manrope-regular fsc-4" style="color: #CCCCCF">{!!$games->description!!}</p>
                         <div class="d-flex">
                             <p class="font-manrope-bold" style="color: #B537F2">View more</p>
                             <img src="/assets/img/arrow.png" width="24" height="24" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img  src="{{url('storage/'.$games->photo)}}" height="115%"
+                        <img src="{{url('storage/'.$games->photo)}}"
                              class="games-img" alt="">
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                 <div class="col-10">
                     @if(session()->has('message'))
                     <div class="alert alert-info text-center fw-bold" id="successMessage" role="alert">
-                       {{session('message')}}
+                        {{session('message')}}
                     </div>
                     @endif
 
@@ -258,12 +258,12 @@
                             </div>
                         </div>
 
-<!--                        @if(session()->has('message'))-->
-<!--                        <div class="alert alert-success alert-dismissable custom-success-box" style="margin: 15px;">-->
-<!--                            <a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times;</a>-->
-<!--                            <strong> {{ session()->get('message') }} </strong>-->
-<!--                        </div>-->
-<!--                        @endif-->
+                        <!--                        @if(session()->has('message'))-->
+                        <!--                        <div class="alert alert-success alert-dismissable custom-success-box" style="margin: 15px;">-->
+                        <!--                            <a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times;</a>-->
+                        <!--                            <strong> {{ session()->get('message') }} </strong>-->
+                        <!--                        </div>-->
+                        <!--                        @endif-->
 
                         <button type="submit" class="btn form_btn_black w-100 mt-3 mb-5">Submit</button>
                     </form>
@@ -572,7 +572,7 @@
 
     setTimeout(function () {
         $('#successMessage').fadeOut('fast');
-    },6000);
+    }, 6000);
 
 </script>
 
